@@ -1,0 +1,16 @@
+#sticky-footer {
+    flex-shrink: none;
+  }
+.footer-margin {
+  height: 100px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40  ;
+  color: white;
+  text-align: center;
+}

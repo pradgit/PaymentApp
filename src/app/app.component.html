@@ -1,0 +1,21 @@
+<app-header (feature)="onNavigate($event)"></app-header>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>Better Off</h1>
+    <p>Brings seamless payment experience!</p>
+    
+  </div>
+</div>
+<br>
+<br>
+<br>
+<app-user-account *ngIf = "loadedFeature === 'UserAccount'"></app-user-account>
+<app-main *ngIf = "loadedFeature === 'Main'" (feature)="onPay($event)"></app-main>
+<app-pay-transaction *ngIf = "loadedFeature === 'PayTransaction'"></app-pay-transaction>
+<app-receive-transaction *ngIf = "loadedFeature === 'ReceiveTransaction'"></app-receive-transaction>
+
+<br>
+<div class="footer">
+  <small>Copyright &copy; All rights are protected by Better Off Corp.</small>
+</div>
