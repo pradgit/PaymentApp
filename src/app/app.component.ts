@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'BankingApp';
+  title = 'Better Off';
   loadedFeature = "Main";
   isClosed = true;
   ngOnInit(){
@@ -14,9 +14,5 @@ export class AppComponent implements OnInit{
   }
   onPay(data){    
     this.loadedFeature = data;
-  }
-
-  onNavigate(feature: string){
-    this.loadedFeature = feature;
   }
 }

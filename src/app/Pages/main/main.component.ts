@@ -19,16 +19,6 @@ export class MainComponent implements OnInit {
  
   ngOnInit() {
     
-  }
-
-  OnPayClick(){
-    this.feature.emit("PayTransaction");
-  }
-
-  OnReceiveClick(){
-    this.feature.emit("ReceiveTransaction");
-  }
-
-  
+  } 
 
 }

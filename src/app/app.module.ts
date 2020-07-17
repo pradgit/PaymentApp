@@ -16,6 +16,8 @@ import { FormsModule } from '@angular/forms';
 import { CalendarModule } from 'primeng/calendar';
 import { ReactiveFormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FilterComponent } from './Components/filter/filter.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReceiveTransactionComponent,
     PaymentOptionsComponent,
     PaymentDetailsComponent,
-    PaymentTypeComponent
+    PaymentTypeComponent,
+    FilterComponent
     
   ],
   imports: [
@@ -36,7 +39,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     CalendarModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [
     paymentService
