@@ -9,6 +9,8 @@ export class HeaderComponent implements OnInit {
 
   @Output() feature = new EventEmitter<string>();
   public isCollapsed = true;
+  isShown:boolean = false;
+  notification: number = 1;
 
   constructor() { }
 
@@ -17,6 +19,10 @@ export class HeaderComponent implements OnInit {
 
   onSection(feature: string){
     this.feature.emit(feature);
+  }
+
+  onBellClick(){
+    this.notification = null;
   }
 
 }

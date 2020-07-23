@@ -18,6 +18,14 @@ import { ReactiveFormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FilterComponent } from './Components/filter/filter.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { SignupComponent } from './Pages/user-account/signup/signup.component';
+import { HelpComponent } from './Pages/help/help.component';
+import { CareersComponent } from './Pages/careers/careers.component';
+import { JobsProfiles } from './Shared/JobsProfiles.model';
+import { AvailableJobsService } from './Services/availableJobs.service';
+import { PageNotFoundComponent } from './Pages/Error/page-not-found/page-not-found.component';
+
 
 @NgModule({
   declarations: [
@@ -31,8 +39,12 @@ import { AppRoutingModule } from './app-routing.module';
     PaymentOptionsComponent,
     PaymentDetailsComponent,
     PaymentTypeComponent,
-    FilterComponent
-    
+    FilterComponent,
+    SignupComponent,
+    HelpComponent,
+    CareersComponent,
+    PageNotFoundComponent,
+  
   ],
   imports: [
     BrowserModule,
@@ -40,10 +52,12 @@ import { AppRoutingModule } from './app-routing.module';
     CalendarModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFontAwesomeModule
   ],
   providers: [
-    paymentService
+    paymentService,
+    AvailableJobsService
   ],
   bootstrap: [AppComponent]
 })

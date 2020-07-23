@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';
 import { FormControl , FormGroup} from '@angular/forms';
 
 
@@ -10,7 +10,7 @@ import { FormControl , FormGroup} from '@angular/forms';
 export class MainComponent implements OnInit {
 
   @Output() feature = new EventEmitter<string>();
-  
+  @ViewChild('alert', {static: true}) alert: ElementRef;
   
   constructor() { 
     
@@ -20,5 +20,8 @@ export class MainComponent implements OnInit {
   ngOnInit() {
     
   } 
-
+  closeAlert() {
+    console.log("closing");
+    this.alert.nativeElement.classList.remove('show');
+  }
 }

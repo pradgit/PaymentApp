@@ -5,10 +5,6 @@
     margin-top: 40px;
   }
 
-.box:hover{
+.box{
     box-shadow: 10px 10px 5px #aaaaaa;
-}
-
-a:hover{
-    text-decoration: none;
 }

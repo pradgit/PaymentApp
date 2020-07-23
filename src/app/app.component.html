@@ -1,15 +1,14 @@
-<app-header></app-header>
+<app-header (feature)="onFeatureSelect($event)"></app-header>
 
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid" style="background:#1abc9c !important">
   <div class="container">
-    <h1>Better Off</h1>
-    <p>Brings seamless payment experience!</p>
-    
+    <div class="centre">
+      <img src="../assets/Picture1.png" style="width: 150px; height: 150px;">
+      <h1 style="color: white">{{appendedTitle}}</h1>
+      <h4 style="font-family: 'Meie Script', cursive; color: white" *ngIf="loadedFeature === 'Main'">Brings seamless payment experience!</h4>
+    </div>
   </div>
 </div>
-<br>
-<br>
-<br>
 <router-outlet></router-outlet>
 <br>
 <div class="footer">
