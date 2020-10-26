@@ -2,15 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './pages/header/header.component';
+import { HeaderComponent } from './Pages/header/header.component';
 import { UserAccountComponent } from './pages/user-account/user-account.component';
-import { MainComponent } from './pages/main/main.component';
-import { TransactionComponent } from './pages/transaction/transaction.component';
-import { PayTransactionComponent } from './pages/Transaction/pay-transaction/pay-transaction.component';
-import { ReceiveTransactionComponent } from './pages/Transaction/receive-transaction/receive-transaction.component';
-import { PaymentOptionsComponent } from './pages/transaction/pay-transaction/payment-options/payment-options.component';
-import { PaymentDetailsComponent } from './pages/transaction/pay-transaction/payment-details/payment-details.component';
-import { PaymentTypeComponent } from './pages/transaction/pay-transaction/payment-options/payment-type/payment-type.component';
+import { MainComponent } from './Pages/main/main.component';
+import { TransactionComponent } from './Pages/transaction/transaction.component';
+import { PayTransactionComponent } from './Pages/transaction/pay-transaction/pay-transaction.component';
+import { ReceiveTransactionComponent } from './Pages/transaction/receive-transaction/receive-transaction.component';
+import { PaymentOptionsComponent } from './Pages/transaction/pay-transaction/payment-options/payment-options.component';
+import { PaymentDetailsComponent } from './Pages/transaction/pay-transaction/payment-details/payment-details.component';
+import { PaymentTypeComponent } from './Pages/transaction/pay-transaction/payment-options/payment-type/payment-type.component';
 import { paymentService } from './Services/payment.service'
 import { FormsModule } from '@angular/forms';
 import { CalendarModule } from 'primeng/calendar';
@@ -24,8 +24,8 @@ import { HelpComponent } from './Pages/help/help.component';
 import { CareersComponent } from './Pages/careers/careers.component';
 import { JobsProfiles } from './Shared/JobsProfiles.model';
 import { AvailableJobsService } from './Services/availableJobs.service';
-import { PageNotFoundComponent } from './Pages/Error/page-not-found/page-not-found.component';
-
+import { PageNotFoundComponent } from './Pages/error/page-not-found/page-not-found.component';
+ 
 
 @NgModule({
   declarations: [

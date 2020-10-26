@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { UserAccountComponent } from './pages/user-account/user-account.component';
-import { MainComponent } from './pages/main/main.component';
-import { PayTransactionComponent } from './pages/Transaction/pay-transaction/pay-transaction.component';
-import { ReceiveTransactionComponent } from './pages/Transaction/receive-transaction/receive-transaction.component';
+import { MainComponent } from './Pages/main/main.component';
+import { PayTransactionComponent } from './Pages/transaction/pay-transaction/pay-transaction.component';
+import { ReceiveTransactionComponent } from './Pages/transaction/receive-transaction/receive-transaction.component';
 import { SignupComponent } from './Pages/user-account/signup/signup.component';
 import { HelpComponent } from './Pages/help/help.component';
 import { CareersComponent } from './Pages/careers/careers.component';
-import { TransactionComponent } from './pages/transaction/transaction.component';
-import { PageNotFoundComponent } from './Pages/Error/page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from './Pages/error/page-not-found/page-not-found.component';
+import { UserAccountComponent } from './pages/user-account/user-account.component';
+import { TransactionComponent } from './Pages/transaction/transaction.component';
 
 const appRoutes: Routes = [
     { path: '', component: MainComponent},
