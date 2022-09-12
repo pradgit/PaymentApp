@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './Pages/header/header.component';
-import { UserAccountComponent } from './pages/user-account/user-account.component';
 import { MainComponent } from './Pages/main/main.component';
 import { TransactionComponent } from './Pages/transaction/transaction.component';
 import { PayTransactionComponent } from './Pages/transaction/pay-transaction/pay-transaction.component';
@@ -32,7 +31,6 @@ import { ErrorComponent } from './Pages/error/error.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    UserAccountComponent,
     MainComponent,
     TransactionComponent,
     PayTransactionComponent,
