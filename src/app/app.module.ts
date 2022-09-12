@@ -25,6 +25,7 @@ import { CareersComponent } from './Pages/careers/careers.component';
 import { JobsProfiles } from './Shared/JobsProfiles.model';
 import { AvailableJobsService } from './Services/availableJobs.service';
 import { PageNotFoundComponent } from './Pages/error/page-not-found/page-not-found.component';
+import { ErrorComponent } from './Pages/error/error.component';
  
 
 @NgModule({
@@ -44,6 +45,7 @@ import { PageNotFoundComponent } from './Pages/error/page-not-found/page-not-fou
     HelpComponent,
     CareersComponent,
     PageNotFoundComponent,
+    ErrorComponent
   
   ],
   imports: [
