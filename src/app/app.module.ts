@@ -18,7 +18,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FilterComponent } from './Components/filter/filter.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { SignupComponent } from './Pages/user-account/signup/signup.component';
 import { HelpComponent } from './Pages/help/help.component';
 import { CareersComponent } from './Pages/careers/careers.component';
 import { JobsProfiles } from './Shared/JobsProfiles.model';
@@ -39,7 +38,6 @@ import { ErrorComponent } from './Pages/error/error.component';
     PaymentDetailsComponent,
     PaymentTypeComponent,
     FilterComponent,
-    SignupComponent,
     HelpComponent,
     CareersComponent,
     PageNotFoundComponent,
